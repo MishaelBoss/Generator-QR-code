@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Главная</title>
+    </head>
+</html>
+<body>
+<form action="/" id="qr-generation-form">
+    <input type="text" name="qr-code-content" placeholder="QR code" id="qr-content" autocomplete="off" />
+    <input type="submit" value="Создать QR code" />
+</form>   
+
+<div id="qr-code"></div>
+
+<script src="Generate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
