@@ -13,20 +13,13 @@ function generateQrCode(qrContent) {
     correctLevel: QRCode.CorrectLevel.H,
   });
 }
- 
-// Event listener for form submit event
+
 qrGenerationForm.addEventListener("submit", function (event) {
-  // Prevent form submission
   event.preventDefault();
   let qrContent = qrContentInput.value;
   if (qrCode == null) {
-       
-    // Generate code initially
     qrCode = generateQrCode(qrContent);
   } else {
-       
-    // If code already generated then make 
-    // again using same object
     qrCode.makeCode(qrContent);
   }
 });
